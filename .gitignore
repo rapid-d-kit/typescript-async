@@ -73,11 +73,8 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+*.env*
+!.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -128,3 +125,21 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+*.tmp
+yarn*
+!yarn.lock
+/docker/**/*
+!/docker/**/Dockerfile*
+!/docker/docker-compose*.yaml
+
+**/*test.ts
+
+
+/var/**/*
+/etc/**/*
+/tmp/**/*
+
+*.gign*
+
+**/*.ignore.ts
